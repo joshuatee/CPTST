@@ -1,0 +1,55 @@
+/// <reference no-default-lib="true"/>
+/// <reference path="../CloudParty.d.ts" />
+
+
+/*
+ * Context Sample
+ */
+
+context.data = {
+    from: "a551e3a2e7d32b28",
+    from_ent: "P00C8211",
+    pos: [
+        -1.850000023841858,
+        4.288091235379228,
+        1.6792271642911478
+    ],
+    click_handler: true
+}
+
+context: {
+    handler: {
+        name: "click",
+        script: "click",
+        channel: "direct",
+        message: "clickStart",
+        data: "message data to be sent statically"
+    },
+    message: {
+        channel: "direct",
+        message: "clickStart",
+        data: {
+            from: "a551e3a2e7d32b28",
+            from_ent: "P00C8211",
+            pos: [
+                -1.850000023841858,
+                4.288091235379228,
+                1.6792271642911478
+            ],
+            click_handler: true
+        }
+    },
+    from: "P00C8211",
+    args: [
+        {
+            from: "a551e3a2e7d32b28",
+            from_ent: "P00C8211",
+            pos: [
+                -1.850000023841858,
+                4.288091235379228,
+                1.6792271642911478
+            ],
+            click_handler: true
+        }
+    ]
+}
